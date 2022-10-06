@@ -9,7 +9,7 @@ char* strtrunc(const char* string, int len)
     for(int i = 0; i < length; i++) {
 	temp[i] = string[i];
     }
-    temp[length-1] = '\0';
+    temp[length] = '\0';
     if (len < strlen(string)) {
 	temp[len] = '\0';
     }
